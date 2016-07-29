@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 $upd = file_get_contents('php://input');
 $upar = json_decode($upd, true);
 if (isset($upar["inline_query"]["location"])){
